@@ -6,9 +6,11 @@
     box-sizing: border-box; 
     font-family: Georgia, 'Times New Roman', Times, serif;  
 }
-html{
-    font-size: 10px;
+
+section{
+    min-height: 100vh;
 }
+
 a {
     text-decoration: none;
 }
@@ -19,8 +21,30 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+ul{
+    list-style-type: none;
+}
+
+li{
+   float: left; 
+}
+
+li a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+
+li a:hover{
+    text-decoration: underline;
+    color: lightblue;
+}
+
+
 /* Hero section*/
 #hero{
+    min-height: 100vh;
     background-image: url(/images/IMG20210612193503.jpg);
     background-size: cover;
     background-position: top center;
@@ -165,4 +189,54 @@ a {
     font-size: 4rem;
     color: #000;
     background-color: crimson
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.section-title span{
+    color: crimson;
+
+}
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+    align-items: center;
+    
+    
+}
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.portfolio .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: black;
+    box-shadow: #a12222;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
 }
